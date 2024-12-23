@@ -7,8 +7,8 @@ os.system('cls' if os.name == 'nt' else 'clear')
 url = "https://ajax.streamable.com/check"
 
 data = {
-    "username": "gjonirei2@gmail.com", #enter email 
-    "password": "reirei123."           #enter password
+    "username": "", #enter email 
+    "password": ""  #enter password
 }
 
 headers = {
