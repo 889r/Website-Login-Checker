@@ -1,14 +1,17 @@
-#imports
 import os
 import requests
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
+username = input("[+] Enter Username: ")
+password = input("[+] Enter Password: ")
+print()
+
 url = "https://ajax.streamable.com/check"
 
 data = {
-    "username": "", #enter email 
-    "password": ""  #enter password
+    "username": username,
+    "password": password 
 }
 
 headers = {
@@ -21,6 +24,3 @@ if "ad_tags" in r:
     print(f"Logged in successfully! Plan={r['plan_name']}, Videos={r['total_videos']}, Country={r['country']}")
 else:
     print(f"Bad Login! {r['message']}")
-
-
-#t.me/TonyQarri
